@@ -1,0 +1,23 @@
+{
+  "name": "animatify",
+  "version": "0.0.0",
+  "description": "A CommonJS wrapper for Animate.css for use with Browserify",
+  "main": "lib/animate.js",
+  "keywords": ["animation", "browserify"],
+  "scripts": {
+    "lint": "jslint --edition=latest --color lib/animate.js test/test.js",
+    "pretest": "browserify -o test/bundle.js test/test.js",
+    "test": "npm run lint"
+  },
+  "author": "Maximilian Antoni <mail@maxantoni.de> (http://maxantoni.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "jslint": "^0.8.0",
+    "animate.css": "^3.2.5",
+    "browserify": "^10.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mantoni/animatify.git"
+  }
+}
