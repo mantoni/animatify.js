@@ -56,6 +56,14 @@ Configure `"dependencies"` and `"scripts"` in your package.json:
   immidiately. Useful for test runs or to allow disabling animations in your
   app.
 
+## Testing
+
+```bash
+$ npm install
+$ npm test
+$ open test/test.html
+```
+
 ## License
 
 MIT
