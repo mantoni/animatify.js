@@ -8,7 +8,7 @@
     "browserify"
   ],
   "scripts": {
-    "lint": "jslint --edition=latest --color lib/animate.js test/test.js",
+    "lint": "eslint lib/animate.js test/test.js",
     "pretest": "browserify -o test/bundle.js test/test.js",
     "test": "npm run lint",
     "preversion": "npm test",
@@ -17,11 +17,19 @@
   },
   "author": "Maximilian Antoni <mail@maxantoni.de> (http://maxantoni.de)",
   "license": "MIT",
+  "eslintConfig": {
+    "extends": "@studio",
+    "rules": {
+      "no-var": 0,
+      "prefer-arrow-callback": 0
+    }
+  },
   "devDependencies": {
     "@studio/changes": "^1.1.0",
+    "@studio/eslint-config": "^1.0.1",
     "animate.css": "^3.2.5",
     "browserify": "^10.2.4",
-    "jslint": "^0.8.0"
+    "eslint": "^3.18.0"
   },
   "homepage": "https://github.com/mantoni/animatify.js",
   "repository": {
