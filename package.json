@@ -16,8 +16,9 @@
     "animate.css": "^3.2.5",
     "browserify": "^10.2.4"
   },
+  "homepage": "https://github.com/mantoni/animatify.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mantoni/animatify.git"
+    "url": "https://github.com/mantoni/animatify.js.git"
   }
 }
