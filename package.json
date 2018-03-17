@@ -11,6 +11,7 @@
     "lint": "eslint lib/animate.js test/test.js",
     "pretest": "browserify -o test/bundle.js test/test.js",
     "test": "npm run lint",
+    "test.classList": "mocha test/classList.js",
     "preversion": "npm test",
     "version": "changes",
     "postversion": "git push --follow-tags && npm publish"
@@ -29,7 +30,10 @@
     "@studio/eslint-config": "^1.0.1",
     "animate.css": "^3.2.5",
     "browserify": "^10.2.4",
-    "eslint": "^3.18.0"
+    "eslint": "^3.18.0",
+    "jsdom": "11.6.2",
+    "jsdom-global": "3.0.2",
+    "mocha": "^5.0.4"
   },
   "homepage": "https://github.com/mantoni/animatify.js",
   "repository": {
