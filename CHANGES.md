@@ -1,5 +1,9 @@
 # Changes
 
+## 1.0.2
+
+- Fix IE 11 issue (Fabio Ricali)
+
 ## 1.0.1
 
 - Fix homepage link
